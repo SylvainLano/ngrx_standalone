@@ -1,0 +1,4 @@
+<div class="container">
+
+    <app-cart-item style="width:100%;max-width: 200px;height: 320px;" *ngFor="let item of cartItems" [item]="item" (sendQToAdd)="addQuantity($event)" (sendQToSub)="subQuantity($event)" />
+</div>

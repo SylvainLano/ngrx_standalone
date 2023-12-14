@@ -1,0 +1,9 @@
+<div class="homePageContainer">
+    <app-header style="width: 100%;" />
+    <h2>Phone Review</h2>
+    <div class="phonesContainer">
+        <app-single-phone-card
+         style="width: 100%;
+        max-width: 200px;" *ngFor="let phone of phones" [phone]="phone" />
+    </div>
+</div>

@@ -1,0 +1,15 @@
+<div class="container">
+    <div class="img">
+        <img [src]="phone?.photoLinks" alt="">
+    </div>
+    <div class="details">
+        <h4>{{phone?.name}}</h4>
+        <p>{{phone?.description}}</p>
+        <div class="priceAndAddToCart">
+            <p>{{phone?.price}}</p>
+            <button class="addToCartButton" (click)="addToCart()">
+                Add To Cart
+            </button>
+        </div>
+    </div>
+</div>

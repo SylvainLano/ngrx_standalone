@@ -1,0 +1,20 @@
+.phoneContainer{
+    display: flex;
+    flex-direction: column;
+    width: calc(100% - 20px);
+    border-radius: 10px;
+    background-color: #eee;
+    align-items: center;
+    padding: 10px;
+    transition: ease all .3s;
+     
+}
+.phoneContainer:hover{
+    transform: scale(1.1);
+    background-color: #d0d0d0;
+    cursor: pointer;
+}
+.phoneContainer>img{
+    height: 200px;
+    width: 100%;
+}

@@ -1,0 +1,9 @@
+<div class="container">
+    <img [src]="item.photoLinks" />
+    <h5>{{item.name}}</h5>
+    <div class="qRow">
+        <button (click)="subQ()">-</button>
+        <label>{{item.quantity}}</label>
+        <button (click)="addQ()">+</button>
+    </div>
+</div>
