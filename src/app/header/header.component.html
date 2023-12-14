@@ -1,4 +1,5 @@
 <div class="container">
+    <button *ngIf="router.url !== '/'" [routerLink]="'/'">Go Back</button>
     <h5>Cart Items : {{cartItemsCount}}</h5>
     <button [routerLink]="'/cart'">Go To Cart</button>
 </div>

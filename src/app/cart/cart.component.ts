@@ -5,11 +5,12 @@ import { Store } from '@ngrx/store';
 import { CartItemComponent } from './cart-item/cart-item.component';
 import { CommonModule } from '@angular/common';
 import { addQuantity, subQuantity } from '../store/cart/cartActions';
+import { HeaderComponent } from '../header/header.component';
 
 @Component({
   selector: 'app-cart',
   standalone: true,
-  imports: [CommonModule,CartItemComponent],
+  imports: [CommonModule,CartItemComponent, HeaderComponent],
   templateUrl: './cart.component.html',
   styleUrl: './cart.component.css'
 })

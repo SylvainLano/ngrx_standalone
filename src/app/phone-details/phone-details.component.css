@@ -1,9 +1,16 @@
-.container{
+.phoneContainer{
     display: flex;
     width: 100%;
     margin-top: 50px;
     column-gap: 50px;
     justify-content: center;
+    
+    
+}
+
+.backContainer{
+    text-align: center;
+    width: 100%;
     
     
 }

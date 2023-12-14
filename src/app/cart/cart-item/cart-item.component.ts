@@ -8,18 +8,19 @@ import { CartModel } from '../../models/cart.model';
   templateUrl: './cart-item.component.html',
   styleUrl: './cart-item.component.css'
 })
+
 export class CartItemComponent {
-@Input() item!:CartModel
-@Output() sendQToAdd=new EventEmitter<number>()
-@Output() sendQToSub=new EventEmitter<number>()
+  @Input() item!:CartModel
+  @Output() sendQToAdd=new EventEmitter<number>()
+  @Output() sendQToSub=new EventEmitter<number>()
 
 
-addQ(){
-  this.sendQToAdd.emit(this.item.id)
-}
+  addQ(){
+    this.sendQToAdd.emit(this.item.id)
+  }
 
-subQ(){
-  this.sendQToSub.emit(this.item.id)
-}
+  subQ(){
+    this.sendQToSub.emit(this.item.id)
+  }
 
 }

@@ -9,7 +9,7 @@ export const cartReducer = createReducer(
     initialState,
     on(addNewItemToCart,(state,action)=>{
       if(state.find((item)=>item.id===action.item.id)){
-         return [...state]
+         return [...state.map((item)=>(item.id===action.item.id?{...item,quantity:item?.quantity+1}:item))]
       }else{
          return [...state,action.item]
       }

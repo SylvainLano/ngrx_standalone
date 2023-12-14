@@ -5,3 +5,12 @@
     gap: 30px;
     
 }
+
+.cartItemsContainer{
+    width: 100%;
+    display:flex;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+    
+}

@@ -6,11 +6,12 @@ import { Observable } from 'rxjs';
 import { PhoneModel } from '../models/phone.model';
 import { CartModel } from '../models/cart.model';
 import { addNewItemToCart } from '../store/cart/cartActions';
+import { HeaderComponent } from '../header/header.component';
 
 @Component({
   selector: 'app-phone-details',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, HeaderComponent],
   templateUrl: './phone-details.component.html',
   styleUrl: './phone-details.component.css'
 })
